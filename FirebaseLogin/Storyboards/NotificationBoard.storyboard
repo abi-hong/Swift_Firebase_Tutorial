@@ -15,8 +15,23 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYU-Ib-Q3K">
+                                <rect key="frame" x="120.5" y="284" width="173" height="30"/>
+                                <state key="normal" title="누르면 푸시알람이 갈꺼에요~"/>
+                                <connections>
+                                    <action selector="buttonPress:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MhE-eN-Ap4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gYU-Ib-Q3K" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="120.5" id="4Q4-35-Lna"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gYU-Ib-Q3K" secondAttribute="trailing" constant="120.5" id="KPw-u3-TSj"/>
+                            <constraint firstItem="gYU-Ib-Q3K" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ieE-MQ-wpD"/>
+                            <constraint firstItem="gYU-Ib-Q3K" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="240" id="kQb-l8-7bF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
